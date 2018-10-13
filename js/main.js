@@ -36,13 +36,13 @@ $(document).ready(function() {
     $('.header').css("height", "100vh");
     if (window.innerWidth > 767) {
         $('.header').parallax({
-            imageSrc: 'images/front-page2.jpg'
+            imageSrc: 'images/PREACHER_BACKGROUND.jpg'
         });
     } else if (window.innerWidth <= 767) {
         $('.header').css({
             'background-size': 'cover',
             'background-position': '58% 50%',
-            'background-image': 'url("images/front-page2.jpg")'
+            'background-image': 'url("images/PREACHER_BACKGROUND.jpg")'
         });
 
     }

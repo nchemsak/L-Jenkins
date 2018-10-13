@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'src/styles.full.css': 'src/styles.scss'
+                    'css/styles.full.css': 'css/styles.scss'
                 }
             }
         },
@@ -17,9 +17,9 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'src/',
+                    cwd: 'css/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'dermdallas/',
+                    dest: 'css/',
                     ext: '.min.css'
                 }]
             }
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
             },
 
             sass: {
-                files: ['src/*.scss'],
+                files: ['css/*.scss'],
                 tasks: ['sass', 'cssmin'],
             },
         }

@@ -1,107 +1,3 @@
-/*
-Theme Name: Dermatology Center of Dallas
-Theme URI: https://www.dermcenterofdallas.com/
-Author: MedForward
-Author URI: http://medforward.com/
-Description: This is a bootstrap 4 based fully custom theme built by MedForward in 2018.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: medforward
-*/
-/* =WordPress Core CSS
--------------------------------------------------------------- */
-.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.aligncenter,
-div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto; }
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-a img.alignnone {
-  margin: 5px 20px 20px 0; }
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 96%;
-  /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
-  text-align: center; }
-
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px; }
-
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto; }
-
-.wp-caption p.wp-caption-text {
-  font-size: 11px;
-  line-height: 17px;
-  margin: 0;
-  padding: 0 4px 5px; }
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar. */ }
-
 .container {
   width: 100%;
   padding-right: 15px;
@@ -854,7 +750,8 @@ a img.aligncenter {
       height: 60px; } }
   .navbar .navbar-brand img {
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    width: 14vw; }
     @media (min-width: 768px) {
       .navbar .navbar-brand img {
         padding-top: 11px;
@@ -863,6 +760,9 @@ a img.aligncenter {
       .navbar .navbar-brand img {
         padding-top: 10px;
         padding-bottom: 10px; } }
+  .navbar .fa {
+    color: #3c607a;
+    font-size: 40px; }
   .navbar .nav-phone {
     color: #fff;
     font-size: 24px;
@@ -890,16 +790,8 @@ a img.aligncenter {
   border: none;
   align-items: center;
   display: flex;
-  border-radius: 0;
   color: #fff;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
   font-size: 24px; }
-  @media (min-width: 576px) {
-    .navbar-dark .navbar-toggler {
-      background-color: #998d63;
-      padding-left: 1.75rem;
-      padding-right: 1.75rem; } }
 
 .navbar-nav {
   display: flex;
@@ -926,9 +818,6 @@ a img.aligncenter {
 .small-dcd-nav-logo {
   height: 50px;
   transition: all .5s; }
-
-.large-dark-navbar {
-  background-color: rgba(83, 83, 83, 0.5); }
 
 .small-dark-navbar {
   background-color: rgba(83, 83, 83, 0.9); }
@@ -1132,6 +1021,10 @@ a img.aligncenter {
 .hideLogo {
   display: none; }
 
+#homepage .bottom-title-scroll {
+  position: absolute;
+  bottom: 50px;
+  right: 50%; }
 @media (min-width: 768px) {
   #homepage #med-cos-derm-section {
     height: 869px;
@@ -1655,190 +1548,6 @@ a:hover span:before {
   opacity: 1;
   left: 0;
   -webkit-backface-visibility: hidden; }
-
-#content-page .content-header {
-  height: 200px;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid black;
-  position: relative; }
-  @media (min-width: 576px) {
-    #content-page .content-header {
-      height: 300px; } }
-  #content-page .content-header h1 {
-    position: absolute;
-    color: #fff;
-    text-shadow: 1px 1px #000;
-    font-size: 29px;
-    top: 96px; }
-    @media (min-width: 576px) {
-      #content-page .content-header h1 {
-        top: 130px;
-        font-size: 43px; } }
-    @media (min-width: 768px) {
-      #content-page .content-header h1 {
-        font-size: 64px;
-        top: 130px; } }
-  #content-page .content-header .breadcrumbs {
-    position: absolute;
-    bottom: 28px;
-    color: #fff;
-    font-size: 13px;
-    margin-left: 10px; }
-#content-page .begin-content {
-  padding-top: 10px; }
-  @media (min-width: 576px) {
-    #content-page .begin-content {
-      padding-top: 25px; } }
-#content-page h2 {
-  font-size: 32px;
-  margin-top: 28px; }
-  #content-page h2:first-of-type {
-    margin-top: 3px; }
-#content-page main {
-  padding-top: 25px;
-  padding-bottom: 25px; }
-#content-page #rcol {
-  border-top: 3px solid #998d63;
-  padding-top: 15px; }
-  @media (min-width: 992px) {
-    #content-page #rcol {
-      padding-left: 30px;
-      border-left: 3px solid #998d63;
-      border-top: none;
-      padding-top: 0px;
-      height: 95%; } }
-  #content-page #rcol h2 {
-    font-size: 25.6px; }
-  #content-page #rcol a {
-    border-bottom: 1px solid #a9a9a9;
-    color: #000;
-    transition: all .5s;
-    display: inline-flex; }
-    #content-page #rcol a:hover {
-      text-decoration: none;
-      background-color: #a9a9a9;
-      color: #fff !important; }
-  #content-page #rcol .sidebar-address {
-    margin-left: 40px; }
-#content-page .about-us-page-wrapper p {
-  display: inline-block;
-  text-align: justify; }
-  @media (min-width: 576px) {
-    #content-page .about-us-page-wrapper p {
-      display: block;
-      text-align: left; } }
-#content-page .about-us-page-wrapper h2 {
-  font-size: 27px;
-  text-align: center;
-  margin-top: 3px; }
-  @media (min-width: 576px) {
-    #content-page .about-us-page-wrapper h2 {
-      text-align: left;
-      font-size: 32px; } }
-#content-page .about-us-page-wrapper .about-us-mag-float {
-  float: right;
-  margin: 0px 7px 7px 0px;
-  width: 150px;
-  text-align: center;
-  display: none; }
-  @media (min-width: 576px) {
-    #content-page .about-us-page-wrapper .about-us-mag-float {
-      float: right;
-      display: block; } }
-  #content-page .about-us-page-wrapper .about-us-mag-float .d-mag {
-    display: block; }
-#content-page .about-us-page-wrapper .wrap-exception {
-  display: inline; }
-#content-page .about-us-page-wrapper .dr-pic {
-  display: block;
-  margin: 0 auto; }
-  @media (min-width: 576px) {
-    #content-page .about-us-page-wrapper .dr-pic {
-      margin-right: 15px;
-      float: left; } }
-#content-page #procedures-page .usercontentitem a {
-  display: inline-flex; }
-#content-page .office-photo {
-  display: none; }
-  @media (min-width: 576px) {
-    #content-page .office-photo {
-      float: right;
-      display: inline; } }
-#content-page a.page-scroll {
-  display: inline-flex; }
-
-.usercontentitem {
-  margin-bottom: 13px; }
-  .usercontentitem h3 {
-    font-size: 25px;
-    margin-top: 28px; }
-  .usercontentitem .clear {
-    clear: both; }
-  .usercontentitem .right {
-    float: right; }
-  .usercontentitem .left {
-    float: left; }
-  .usercontentitem img.right {
-    margin-left: 10px;
-    margin-bottom: 5px; }
-  .usercontentitem img.left {
-    margin-right: 10px;
-    margin-bottom: 5px; }
-  .usercontentitem img {
-    max-width: 100%;
-    height: auto; }
-  .usercontentitem table tbody tr td {
-    padding: 7px 3px; }
-  .usercontentitem a {
-    border-bottom: 1px solid #a9a9a9;
-    color: #000;
-    transition: all .5s; }
-    .usercontentitem a:hover {
-      text-decoration: none;
-      background-color: #a9a9a9;
-      color: #fff !important; }
-  .usercontentitem #faq-questions h2 {
-    font-size: 27px;
-    margin-top: 28px; }
-  .usercontentitem .resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; }
-    @media (min-width: 576px) {
-      .usercontentitem .resp-container {
-        padding-top: 87%; } }
-    @media (min-width: 768px) {
-      .usercontentitem .resp-container {
-        padding-top: 64%; } }
-    @media (min-width: 992px) {
-      .usercontentitem .resp-container {
-        padding-top: 72%; } }
-    @media (min-width: 1200px) {
-      .usercontentitem .resp-container {
-        padding-top: 56.25%; } }
-  .usercontentitem .ultherapy-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; }
-  .usercontentitem .ultherapy-logo {
-    float: right;
-    width: 175px;
-    margin-left: 20px; }
-  .usercontentitem .map-iframe {
-    width: 100%;
-    height: 400px; }
-  .usercontentitem .blogo a {
-    display: block;
-    height: 80px;
-    width: 154px;
-    text-decoration: none;
-    background: url(images/BD-logo.png) no-repeat;
-    margin-left: 25px; }
-  .usercontentitem .products-page-column {
-    margin-bottom: 25px; }
 
 body {
   line-height: 30px;

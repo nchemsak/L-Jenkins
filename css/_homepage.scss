@@ -9,6 +9,17 @@
 // @include media-breakpoint-up(lg) {}
 // @include media-breakpoint-up(xl) {}
 #homepage {
+    .fa-chevron-down {
+  
+
+}
+
+.bottom-title-scroll {
+      position: absolute;
+    bottom: 50px;
+    right:50%;
+}
+
     #med-cos-derm-section {
         @include media-breakpoint-up(md) {
             height: 869px;
