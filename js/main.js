@@ -7,28 +7,28 @@ $(window).resize(function() {
 })
 
 // Set classes for navbar for mobile
-$(document).ready(function() {
-    if (window.innerWidth <= 767) {
-        $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-        $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
-        $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
-    }
-});
+// $(document).ready(function() {
+//     if (window.innerWidth <= 767) {
+//         $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
+//         $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
+//         $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
+//     }
+// });
 
 // change size of navbar on scroll on Desktop
-$(document).on("scroll", function() {
-    if (window.innerWidth > 767) {
-        if ($(document).scrollTop() > 180) {
-            $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-            $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
-            $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
-        } else {
-            $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
-            $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
-            $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
-        }
-    } else {}
-});
+// $(document).on("scroll", function() {
+//     if (window.innerWidth > 767) { 
+//         if ($(document).scrollTop() > 180) {
+//             $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
+//             $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
+//             $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
+//         } else {
+//             $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
+//             $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
+//             $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
+//         }
+//     } else {}
+// });
 
 // parallax window - http://pixelcog.github.io/parallax.js/
 $(document).ready(function() {
@@ -91,59 +91,59 @@ $(document).ready(function() {
 
 
 // Full Screen Navbar
-$(document).ready(function() {
-    var Menu = (function() {
-        var burger = document.querySelector('.burger');
-        var menu = document.querySelector('.menu');
-        var menuList = document.querySelector('.menu__list');
-        var brand = document.querySelector('.menu__brand');
-        var menuItems = document.querySelectorAll('.menu__item');
+// $(document).ready(function() {
+//     var Menu = (function() {
+//         var burger = document.querySelector('.burger');
+//         var menu = document.querySelector('.menu');
+//         var menuList = document.querySelector('.menu__list');
+//         var brand = document.querySelector('.menu__brand');
+//         var menuItems = document.querySelectorAll('.menu__item');
 
-        var menuLogo = document.querySelector('.dcd-nav-logo');
+//         var menuLogo = document.querySelector('.dcd-nav-logo');
 
-        var active = false;
+//         var active = false;
 
-        var toggleMenu = function() {
-            if (!active) {
-                menu.classList.add('menu--active');
-                menuList.classList.add('menu__list--active');
-                brand.classList.add('menu__brand--active');
-                burger.classList.add('burger--close');
-                for (var i = 0, ii = menuItems.length; i < ii; i++) {
-                    menuItems[i].classList.add('menu__item--active');
-                }
-                active = true;
-            } else {
-                menu.classList.remove('menu--active');
-                menuList.classList.remove('menu__list--active');
-                brand.classList.remove('menu__brand--active');
-                burger.classList.remove('burger--close');
-                for (var i = 0, ii = menuItems.length; i < ii; i++) {
-                    menuItems[i].classList.remove('menu__item--active');
-                }
-                active = false;
-            }
-        };
+//         var toggleMenu = function() {
+//             if (!active) {
+//                 menu.classList.add('menu--active');
+//                 menuList.classList.add('menu__list--active');
+//                 brand.classList.add('menu__brand--active');
+//                 burger.classList.add('burger--close');
+//                 for (var i = 0, ii = menuItems.length; i < ii; i++) {
+//                     menuItems[i].classList.add('menu__item--active');
+//                 }
+//                 active = true;
+//             } else {
+//                 menu.classList.remove('menu--active');
+//                 menuList.classList.remove('menu__list--active');
+//                 brand.classList.remove('menu__brand--active');
+//                 burger.classList.remove('burger--close');
+//                 for (var i = 0, ii = menuItems.length; i < ii; i++) {
+//                     menuItems[i].classList.remove('menu__item--active');
+//                 }
+//                 active = false;
+//             }
+//         };
 
-        var bindActions = function() {
-            burger.addEventListener('click', toggleMenu, false);
-        };
+//         var bindActions = function() {
+//             burger.addEventListener('click', toggleMenu, false);
+//         };
 
-        var init = function() {
-            bindActions();
-        };
+//         var init = function() {
+//             bindActions();
+//         };
 
-        return {
-            init: init
-        };
+//         return {
+//             init: init
+//         };
 
-    }());
+//     }());
 
-    Menu.init();
+//     Menu.init();
 
 
 
-});
+// });
 
 
 // page scroll

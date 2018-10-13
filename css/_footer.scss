@@ -7,10 +7,11 @@ footer {
     border-bottom-right-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    background-color: $color-grey;
+    // background-color: $color-grey;
     -webkit-filter: drop-shadow(0px 5px 5px #222);
     filter: drop-shadow(0px 5px 5px #222);
     font-size: 14px;
+    text-align: center;
     .footer-phone {
         font-size: 17px;
     }

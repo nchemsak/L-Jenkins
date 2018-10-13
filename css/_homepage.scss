@@ -9,61 +9,80 @@
 // @include media-breakpoint-up(lg) {}
 // @include media-breakpoint-up(xl) {}
 #homepage {
-    .fa-chevron-down {
-  
+    .fa-chevron-down {}
 
-}
+    .bottom-title-scroll {
+        position: absolute;
+        bottom: 50px;
+        // right:50%;
+        text-align: center;
+        color: #ff0024;
+        text-transform: uppercase;
+        font-size: 30px;
 
-.bottom-title-scroll {
-      position: absolute;
-    bottom: 50px;
-    right:50%;
-}
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+    }
 
     #med-cos-derm-section {
         @include media-breakpoint-up(md) {
             height: 869px;
-            background-position: 30% 50%!important;
+            background-position: 30% 50% !important;
             background-repeat: no-repeat;
         }
+
         @include media-breakpoint-down(lg) {
             background-image: none;
         }
+
         .med-cos-derm-headings {
             margin-top: 20px;
+
             @include media-breakpoint-up(md) {
                 float: right;
                 margin-top: 80px;
             }
+
             h2,
             h3 {
                 margin: 0;
             }
+
             h2 {
                 @include media-breakpoint-down(md) {
                     font-size: 27px;
                 }
             }
+
             h3 {
                 margin-left: 0px;
                 line-height: initial;
+
                 @include media-breakpoint-up(md) {
                     margin-left: 110px;
                     line-height: 18px;
                 }
             }
         }
+
         .med-cos-derm-text-wrapper {
             padding-bottom: 30px;
+
             @include media-breakpoint-up(md) {
                 padding-bottom: initial;
                 clear: both;
                 width: 315px;
                 float: right;
             }
+
             .med-cos-derm-text {
                 margin-bottom: 30px;
                 margin-top: 20px;
+
                 @include media-breakpoint-up(md) {
                     margin-top: 50px;
                 }
@@ -76,9 +95,11 @@
         padding-top: 30px;
         padding-bottom: 60px;
         background-color: $color-light-tan;
+
         @include media-breakpoint-up(md) {
             padding-top: 60px;
         }
+
         h2 {
             @include media-breakpoint-up(sm) {
                 width: 100%;
@@ -87,10 +108,12 @@
                 margin: 10px 0 50px 0;
             }
         }
+
         h2 span {
             background-color: $color-light-tan;
             padding: 0 30px 0 0;
         }
+
         .btn {
             margin: 0 auto;
             margin-top: 20px;
@@ -99,10 +122,12 @@
         img {
             margin: 0 auto;
             display: block;
+
             @include media-breakpoint-up(md) {
                 display: inline;
             }
         }
+
         .meet-derms-text {
             @include media-breakpoint-down(md) {
                 margin-bottom: 20px;
@@ -117,6 +142,7 @@
         padding-bottom: 30px;
 
         width: 100%;
+
         @include media-breakpoint-up(sm) {
             padding-right: 30px;
             position: absolute;
@@ -124,13 +150,16 @@
             left: 0;
             right: 0;
         }
+
         @include media-breakpoint-up(lg) {
             width: 875px;
         }
+
         h4,
         h5 {
             text-align: center;
         }
+
         a {
             border-bottom: 1px solid #877c57;
             transition: all .5s;
@@ -141,11 +170,13 @@
                 text-decoration: none;
                 background-color: #877c57;
             }
+
             span {
                 &:before {
-                    top: 4px!important;
+                    top: 4px !important;
                 }
             }
+
             .fa {
                 font-size: 16px;
             }
@@ -155,6 +186,7 @@
     .our-goal-text {
         width: 100%;
         margin: auto;
+
         @include media-breakpoint-up(lg) {
             width: 587px;
         }
