@@ -760,6 +760,14 @@
       .navbar .navbar-brand img {
         padding-top: 10px;
         padding-bottom: 10px; } }
+  .navbar .navbar-brand.navbar-brand-xs img {
+    width: 47vw;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 6px; }
   .navbar .fa {
     color: #3c607a;
     font-size: 40px; }
@@ -871,12 +879,8 @@
 .menu {
   position: fixed;
   top: 0;
-  width: 100%;
   visibility: hidden;
   z-index: 99; }
-  @media (max-width: 991.98px) {
-    .menu {
-      height: 100%; } }
   .menu--active {
     visibility: visible;
     z-index: 10; }
@@ -887,7 +891,7 @@
     justify-content: center;
     float: left;
     width: 50%;
-    height: 100vh;
+    height: 20vh;
     overflow: hidden; }
   .menu__list {
     margin: 0;
@@ -905,7 +909,6 @@
         display: none; } }
   .menu__list2 {
     list-style-type: none;
-    margin-bottom: 7rem;
     padding-left: 0px; }
     @media (min-width: 576px) {
       .menu__list2 {
@@ -915,6 +918,7 @@
         margin-bottom: 7rem; } }
   .menu__brand {
     background: rgba(83, 83, 83, 0.9);
+    background-color: #2f6886;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     -webkit-backface-visibility: hidden;
     transform: translate3d(0, 100%, 0); }
@@ -922,10 +926,11 @@
       transform: translate3d(0, 0, 0); }
     @media (max-width: 767.98px) {
       .menu__brand {
-        background: rgba(64, 64, 64, 0.92); } }
+        background: rgba(64, 64, 64, 0.92);
+        background-color: #2f6886; } }
   .menu__item {
     transform: translate3d(500px, 0, 0);
-    text-align: center;
+    text-align: left;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     -webkit-backface-visibility: hidden; }
     .menu__item--active {
@@ -940,6 +945,7 @@
     text-decoration: none;
     color: white;
     -webkit-backface-visibility: hidden;
+    text-transform: uppercase;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     -webkit-backface-visibility: hidden; }
     .menu__link:hover {
@@ -991,32 +997,49 @@
         background-color: initial;
         color: #fff; }
 
-@media screen and (max-width: 768px) {
-  ul.menu__list,
-  div.menu__brand {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu__list--active,
-    div.menu__brand--active {
-      transform: translate3d(0, 0, 0); }
+.mobile-logo {
+  display: block;
+  text-align: center; }
+  .mobile-logo img {
+    width: 50%; }
+  @media (min-width: 576px) {
+    .mobile-logo {
+      display: none; } }
 
-  .menu__list {
-    height: 0px;
-    transform: translate3d(-100%, 0, 0); }
+ul.menu__list,
+div.menu__brand {
+  float: none;
+  width: 150%;
+  min-height: 0; }
+  ul.menu__list--active,
+  div.menu__brand--active {
+    transform: translate3d(0, 0, 0); }
+    @media (min-width: 576px) {
+      ul.menu__list--active,
+      div.menu__brand--active {
+        display: none; } }
 
-  .menu__link {
-    font-size: 24px; }
+.menu__list {
+  height: 0px;
+  transform: translate3d(-100%, 0, 0); }
 
-  .menu__brand {
-    height: 100vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu__brand .logo {
-      width: 90px;
-      height: 90px; } }
+.menu__link {
+  font-size: 24px; }
+
+.menu__brand {
+  height: 50vh;
+  transform: translate3d(0, -100%, 0); }
+  .menu__brand .logo {
+    width: 90px;
+    height: 90px; }
+
 .hideLogo {
   display: none; }
 
+#homepage .fa-chevron-down {
+  color: #747474; }
+  #homepage .fa-chevron-down:hover {
+    color: #fff; }
 #homepage .bottom-title-scroll {
   position: absolute;
   bottom: 50px;
@@ -1028,6 +1051,14 @@
   margin-right: auto;
   left: 0;
   right: 0; }
+  #homepage .bottom-title-scroll .preacher-logo {
+    max-width: 75%; }
+    @media (min-width: 768px) {
+      #homepage .bottom-title-scroll .preacher-logo {
+        max-width: 50%; } }
+    @media (min-width: 1200px) {
+      #homepage .bottom-title-scroll .preacher-logo {
+        max-width: 550px; } }
 @media (min-width: 768px) {
   #homepage #med-cos-derm-section {
     height: 869px;
