@@ -1,3 +1,18 @@
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
 .container {
   width: 100%;
   padding-right: 15px;
@@ -1048,11 +1063,6 @@ div.menu__brand {
     .menu__brand3 {
       display: none; } }
 
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
 .menu__brand {
   height: 50vh;
   transform: translate3d(0, -100%, 0); }
@@ -1063,11 +1073,6 @@ div.menu__brand {
 .hideLogo {
   display: none; }
 
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {

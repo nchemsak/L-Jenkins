@@ -7,18 +7,9 @@
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
 // @include media-breakpoint-up(lg) {}
-// @include media-breakpoint-up(xl) {}
+// @include media-breakpoint-up(xl) {} 
 
 
-@keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac;
-    }
-
-    to {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac;
-    }
-}
 
 
 #homepage {
