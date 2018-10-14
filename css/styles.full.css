@@ -752,18 +752,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     width: 14vw;
-    color: #228DFF; }
+    transition: filter .5s;
+    -webkit-backface-visibility: hidden;
+    outline: 1px solid transparent; }
     .navbar .navbar-brand img:hover {
-      -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-      animation: neon2 1.5s ease-in-out infinite alternate; }
-@keyframes neon2 {
-  0% {
-    filter: drop-shadow(0px 0px 10px #fff); }
-  50% {
-    filter: drop-shadow(0px 0px 20px #fff); }
-  100% {
-    filter: drop-shadow(0px 0px 30px #fff); } }
+      filter: drop-shadow(-1px 1px 8px #fff); }
     @media (min-width: 768px) {
       .navbar .navbar-brand img {
         padding-top: 11px;
@@ -784,7 +777,10 @@
     color: #3c607a;
     font-size: 40px; }
     .navbar .fa:hover {
-      color: #fff; }
+      color: #fff;
+      -webkit-animation: neon2 1s ease-in-out infinite alternate;
+      -moz-animation: neon2 1s ease-in-out infinite alternate;
+      animation: neon2 1s ease-in-out infinite alternate; }
   .navbar .nav-phone {
     color: #fff;
     font-size: 24px;
@@ -1044,10 +1040,19 @@ div.menu__brand {
   .menu__brand3 ul {
     padding-left: 27px;
     list-style: none; }
+    .menu__brand3 ul li a:hover span {
+      -webkit-animation: neon2 1s ease-in-out infinite alternate;
+      -moz-animation: neon2 1s ease-in-out infinite alternate;
+      animation: neon2 1s ease-in-out infinite alternate; }
   @media (max-width: 767.98px) {
     .menu__brand3 {
       display: none; } }
 
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
 .menu__brand {
   height: 50vh;
   transform: translate3d(0, -100%, 0); }
@@ -1058,10 +1063,18 @@ div.menu__brand {
 .hideLogo {
   display: none; }
 
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {
-    color: #fff; }
+    color: #fff;
+    -webkit-animation: neon2 1s ease-in-out infinite alternate;
+    -moz-animation: neon2 1s ease-in-out infinite alternate;
+    animation: neon2 1s ease-in-out infinite alternate; }
 #homepage .bottom-title-scroll {
   position: absolute;
   bottom: 50px;
