@@ -1,20 +1,21 @@
 ////////////////////////////////// BUTTONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 a {
     &.btn {
-        background-color: $color-tan;
+        background-color:#3c607a;
         color: #fff;
-        -webkit-box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
-        -moz-box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
-        box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
+        // -webkit-box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
+        // -moz-box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
+        // box-shadow: 22px 22px 0px 0px rgba(240, 240, 240, 1);
         border-radius: 0px;
         font-size: 24px;
         padding: 21px;
+white-space: normal;
            @include media-breakpoint-down(md) {
-            display: block;
+            // display: block;
         }
-        @include media-breakpoint-up(md) {
-            width: 310px;
-        }
+    @include media-breakpoint-up(md) {
+        width: 500px;
+    }
     }
 }
 
@@ -84,7 +85,7 @@ button.back-to-top:hover::before {
 button.back-to-top.show {
     display: block;
     background: #fff;
-    color: $color-tan;
+    color: #3c607a;
     font-size: 25px;
     right: 60px;
     bottom: 60px;

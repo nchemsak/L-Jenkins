@@ -17,6 +17,10 @@ $mobile-navbar-color: #2f6886;
 
     @include media-breakpoint-down(sm) {
         height: 60px;
+
+    }
+    @include media-breakpoint-up(md) {
+        height: 112px;
     }
 
     .navbar-brand {
@@ -156,11 +160,19 @@ $mobile-navbar-color: #2f6886;
 }
 
 .small-dark-navbar {
-    background-color: rgba(83, 83, 83, 0.9);
+      background-color: none;
+        border: none;
+        // height: initial;
 
-    @include media-breakpoint-up(sm) {
-        background-color: rgba(83, 83, 83, 0.9);
+    @include media-breakpoint-up(md) {
+          background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #fff;
+    // height: 110px;
     }
+    // @include media-breakpoint-up(sm) {
+    //     background-color: rgba(83, 83, 83, 0.9);
+    // }
 }
 
 
@@ -442,7 +454,8 @@ div.menu__brand {
 
 .menu__brand3 {
     position: absolute;
-    top: 8vw;
+    // top: 8vw;
+    top: 121px;
     width: 100vw;
 
     @include media-breakpoint-up(md) {

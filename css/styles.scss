@@ -2,24 +2,24 @@
 $body-bg: #fff;
 $body-color: #999;
 
-$color-tan: #998d63;
+
 $color-light-tan: #ebe8e1;
 $color-grey: #858585;
-$primary-color: rgba(83, 83, 83, .9); 
+$primary-color: rgba(83, 83, 83, .9);
 
 $body-font-size: 18px;
 $body-line-height: 30px;
 
 $h1-size: 64px;
 $h2-size: 64px;
-$h3-size: 43px; 
+$h3-size: 43px;
 $h4-size: 28px;
 $h5-size: 18px;
 
 $main-font: 'Nunito Sans',
-sans-serif; 
- 
- 
+sans-serif;
+
+
 
 /////////////////////// CUSTOM MIXINS  \\\\\\\\\\\\\\\\\\\\\\\
 @mixin easeOut {
@@ -41,7 +41,7 @@ sans-serif;
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #729cac, 0 0 35px #729cac, 0 0 40px #729cac, 0 0 50px #729cac, 0 0 75px #729cac;
     }
-} 
+}
 
 @-moz-keyframes neon2 {
     from {
@@ -78,14 +78,26 @@ sans-serif;
 
 
 // general styles
-body { 
+body {
     line-height: $body-line-height;
     font-family: $main-font;
 }
 
 h2 {
+
+
+display: table;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 5000;
+
+
+    text-align: center;
+    color: #fff;
+
     font-size: 32px;
-    color: $color-tan;
+
     @include media-breakpoint-up(md) {
         font-size: $h2-size;
     }
@@ -93,8 +105,8 @@ h2 {
 
 h3 {
     font-size: $h3-size;
-    color: $color-grey; 
-} 
+    color: $color-grey;
+}
 
 h4 {
     font-size: $h4-size;
@@ -118,13 +130,9 @@ img.dcd-logo {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
     transition: all .5s;
+
     &:hover {
         -webkit-filter: drop-shadow(5px 5px 5px #aaa);
         filter: drop-shadow(5px 5px 5px #aaa);
     }
 }
-
-
-
-
-

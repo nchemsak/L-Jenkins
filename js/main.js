@@ -16,19 +16,19 @@ $(window).resize(function() {
 // });
 
 // change size of navbar on scroll on Desktop
-// $(document).on("scroll", function() {
-//     if (window.innerWidth > 767) { 
-//         if ($(document).scrollTop() > 380) {
-//             $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-//             $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
-//             $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
-//         } else {
-//             $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
-//             $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
-//             $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
-//         }
-//     } else {}
-// });
+$(document).on("scroll", function() {
+    // if (window.innerWidth > 767) { 
+        if ($(document).scrollTop() > 900) {
+            // $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
+            // $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
+            $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
+        } else {
+            // $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
+            // $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
+            $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
+        }
+    // } else {}
+});
 
 // parallax window - http://pixelcog.github.io/parallax.js/
 $(document).ready(function() {
@@ -50,7 +50,7 @@ $(document).ready(function() {
     //SECOND SECTION PARALLAX
     if (window.innerWidth > 767) {
         $('#page-content').parallax({
-            imageSrc: 'images/background.jpg'
+            imageSrc: 'images/background2.jpg'
         });
     } else if (window.innerWidth <= 767) { return }
 
@@ -153,7 +153,8 @@ $(document).ready(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 75)
+            // scrollTop: ($($anchor.attr('href')).offset().top - 75)
+               scrollTop: ($($anchor.attr('href')).offset().top)
         }, 1000);
         event.preventDefault();
     });

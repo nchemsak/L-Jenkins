@@ -1,9 +1,12 @@
 ////////////////////////////////// FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 footer {
-    padding: 0px;
+
+    background-color: #000;
+    border-top: 5px solid white;
+    padding: 15px 0 45px 0;
     color: rgba(255, 255, 255, 1.00);
     color: rgba(255, 255, 255, 0.80);
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     border-bottom-right-radius: 0px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -12,15 +15,19 @@ footer {
     filter: drop-shadow(0px 5px 5px #222);
     font-size: 14px;
     text-align: center;
-    .footer-phone {
-        font-size: 17px;
-    }
+
+.copy {
+    margin-top: 15px;
+}
+
     // The Overlay (background)
     .footer-overlay {
         padding: 0px;
+
         @include media-breakpoint-up(md) {
             padding: 60px 40px;
         }
+
         background-color: rgba(0, 0, 0, 0.4);
         box-shadow: inset 0 -16px 65px -4px rgba(0, 0, 0, 0.3),
         inset 0 16px 65px -4px rgba(0, 0, 0, 0.3);
@@ -34,30 +41,36 @@ footer {
         padding-bottom: 10px;
         border-bottom: 1px dashed #fff;
     }
+
     .footer-brand,
     .footer-nav,
     .footer-social,
     .footer-ns {
         padding: 10px 25px;
     }
+
     .footer-nav,
     .footer-social,
     .footer-ns {
         border-color: transparent;
+
         @include media-breakpoint-up(md) {
             border-left: solid 1px rgba(255, 255, 255, 0.10);
         }
     }
+
     .footer-brand {
         h2 {
             margin: 0px 0px 10px;
             font-size: 20px
         }
+
         p {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.70);
         }
     }
+
     .footer-nav {
 
         ul {
@@ -65,15 +78,19 @@ footer {
                 list-style: none;
                 padding: 0px;
                 margin-bottom: 0px;
+
                 li {
                     padding: 5px 0px;
                 }
+
                 a {
                     color: rgba(255, 255, 255, 0.80);
+
                     &:hover {
                         color: rgba(255, 255, 255, 0.60);
                         text-decoration: none;
                     }
+
                     span:before {
                         top: 0px;
                     }
@@ -81,9 +98,11 @@ footer {
             }
         }
     }
+
     a {
         text-shadow: none;
     }
+
     /* SOCIAL MEDIA ICONS IN FOOTER */
     #footer-social {
 
@@ -99,15 +118,19 @@ footer {
             height: 0;
             margin-bottom: 5px;
         }
+
         a {
             color: rgba(255, 255, 255, 1.00);
+
             &:hover {
                 color: rgba(255, 255, 255, 0.80);
                 text-decoration: none;
                 -webkit-filter: drop-shadow(-1px -1px 2px #222);
                 filter: drop-shadow(-1px -1px 2px #222);
             }
-        } // icons
+        }
+
+        // icons
         .icon-link {
             width: 60px;
             height: 60px;
@@ -121,16 +144,19 @@ footer {
             -webkit-box-sizing: content-box;
             box-sizing: content-box;
             border-radius: 50%;
+
             @include media-breakpoint-up(lg) {
                 margin-right: 10px;
                 float: left;
                 display: block;
             }
+
             .fa {
                 color: #fff;
                 line-height: 60px;
                 font-size: 36px;
             }
+
             &:hover {
                 height: 56px;
                 line-height: 56px;
@@ -141,27 +167,31 @@ footer {
                 .fa {
                     line-height: 56px;
                 }
+
                 .fa-facebook {
                     color: #3b5998;
                 }
+
                 .fa-twitter {
                     color: #00aced;
                 }
+
                 .fa-instagram {
                     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
-                    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
-                    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-                    linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+                        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+                        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+                        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
             }
         }
     }
+
     .footer-ns {
         img {
             margin-bottom: 15px;
@@ -170,12 +200,14 @@ footer {
                 margin-bottom: 0px;
             }
         }
+
         h4 {
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 3px;
             margin-bottom: 10px;
         }
+
         p {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.70);
@@ -185,33 +217,24 @@ footer {
             border-bottom: 1px solid darkgrey;
             color: #fff;
             transition: all .5s;
+
             &:hover {
                 text-decoration: none;
                 background-color: darkgrey;
-                color: #000!important;
+                color: #000 !important;
             }
+
             &.footer-logo-link {
                 border: none;
+
                 &:hover {
                     background-color: initial;
                 }
             }
         }
     }
+
     #footer-menu-links {
         font-size: 14px;
     }
-}
-
-
-.medforward-tag {
-    text-align: center;
-    margin: 10px auto;
-    font-size: 12px;
-    color: #000;
-}
-
-.medforward-tag a {
-    text-shadow: none!important;
-    font-weight: 700;
 }

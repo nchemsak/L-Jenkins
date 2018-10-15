@@ -763,6 +763,9 @@
   @media (max-width: 767.98px) {
     .navbar {
       height: 60px; } }
+  @media (min-width: 768px) {
+    .navbar {
+      height: 112px; } }
   .navbar .navbar-brand img {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -850,10 +853,13 @@
   transition: all .5s; }
 
 .small-dark-navbar {
-  background-color: rgba(83, 83, 83, 0.9); }
-  @media (min-width: 576px) {
+  background-color: none;
+  border: none; }
+  @media (min-width: 768px) {
     .small-dark-navbar {
-      background-color: rgba(83, 83, 83, 0.9); } }
+      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid #fff; } }
 
 .hamburger {
   float: right;
@@ -1052,7 +1058,7 @@ div.menu__brand {
 
 .menu__brand3 {
   position: absolute;
-  top: 8vw;
+  top: 121px;
   width: 100vw; }
   @media (min-width: 768px) {
     .menu__brand3 {
@@ -1084,19 +1090,24 @@ div.menu__brand {
 .hideLogo {
   display: none; }
 
+#homepage .bit-widget-container {
+  margin-top: 25px; }
 #homepage section {
   padding-top: 25px; }
-  #homepage section h2 {
-    text-align: center; }
-#homepage #music-iframe {
-  height: 100vh;
-  display: block;
-  margin: 0 auto;
-  width: 600px;
-  padding: 50px; }
-  @media (min-width: 1200px) {
-    #homepage #music-iframe {
-      width: 600px; } }
+#homepage #music-section {
+  background-color: black;
+  padding-bottom: 25px;
+  border-bottom: 5px solid white; }
+  #homepage #music-section #music-iframe {
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px; }
+    @media (min-width: 1200px) {
+      #homepage #music-section #music-iframe {
+        width: 600px;
+        padding: 50px; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {
@@ -1123,120 +1134,6 @@ div.menu__brand {
     @media (min-width: 1200px) {
       #homepage .bottom-title-scroll .preacher-logo {
         max-width: 550px; } }
-@media (min-width: 768px) {
-  #homepage #med-cos-derm-section {
-    height: 869px;
-    background-position: 30% 50% !important;
-    background-repeat: no-repeat; } }
-@media (max-width: 1199.98px) {
-  #homepage #med-cos-derm-section {
-    background-image: none; } }
-#homepage #med-cos-derm-section .med-cos-derm-headings {
-  margin-top: 20px; }
-  @media (min-width: 768px) {
-    #homepage #med-cos-derm-section .med-cos-derm-headings {
-      float: right;
-      margin-top: 80px; } }
-  #homepage #med-cos-derm-section .med-cos-derm-headings h2,
-  #homepage #med-cos-derm-section .med-cos-derm-headings h3 {
-    margin: 0; }
-  @media (max-width: 991.98px) {
-    #homepage #med-cos-derm-section .med-cos-derm-headings h2 {
-      font-size: 27px; } }
-  #homepage #med-cos-derm-section .med-cos-derm-headings h3 {
-    margin-left: 0px;
-    line-height: initial; }
-    @media (min-width: 768px) {
-      #homepage #med-cos-derm-section .med-cos-derm-headings h3 {
-        margin-left: 110px;
-        line-height: 18px; } }
-#homepage #med-cos-derm-section .med-cos-derm-text-wrapper {
-  padding-bottom: 30px; }
-  @media (min-width: 768px) {
-    #homepage #med-cos-derm-section .med-cos-derm-text-wrapper {
-      padding-bottom: initial;
-      clear: both;
-      width: 315px;
-      float: right; } }
-  #homepage #med-cos-derm-section .med-cos-derm-text-wrapper .med-cos-derm-text {
-    margin-bottom: 30px;
-    margin-top: 20px; }
-    @media (min-width: 768px) {
-      #homepage #med-cos-derm-section .med-cos-derm-text-wrapper .med-cos-derm-text {
-        margin-top: 50px; } }
-#homepage #meet-derms-section {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  background-color: #ebe8e1; }
-  @media (min-width: 768px) {
-    #homepage #meet-derms-section {
-      padding-top: 60px; } }
-  @media (min-width: 576px) {
-    #homepage #meet-derms-section h2 {
-      width: 100%;
-      border-bottom: 3px solid #998d63;
-      line-height: 0.1em;
-      margin: 10px 0 50px 0; } }
-  #homepage #meet-derms-section h2 span {
-    background-color: #ebe8e1;
-    padding: 0 30px 0 0; }
-  #homepage #meet-derms-section .btn {
-    margin: 0 auto;
-    margin-top: 20px; }
-  #homepage #meet-derms-section img {
-    margin: 0 auto;
-    display: block; }
-    @media (min-width: 768px) {
-      #homepage #meet-derms-section img {
-        display: inline; } }
-  @media (max-width: 991.98px) {
-    #homepage #meet-derms-section .meet-derms-text {
-      margin-bottom: 20px; } }
-#homepage .front-page-box {
-  background-color: #998d63;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%; }
-  @media (min-width: 576px) {
-    #homepage .front-page-box {
-      padding-right: 30px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0; } }
-  @media (min-width: 992px) {
-    #homepage .front-page-box {
-      width: 875px; } }
-  #homepage .front-page-box h4,
-  #homepage .front-page-box h5 {
-    text-align: center; }
-  #homepage .front-page-box a {
-    border-bottom: 1px solid #877c57;
-    transition: all .5s;
-    color: #fff; }
-    #homepage .front-page-box a:hover {
-      padding: 0px 20px;
-      text-decoration: none;
-      background-color: #877c57; }
-    #homepage .front-page-box a span:before {
-      top: 4px !important; }
-    #homepage .front-page-box a .fa {
-      font-size: 16px; }
-#homepage .our-goal-text {
-  width: 100%;
-  margin: auto; }
-  @media (min-width: 992px) {
-    #homepage .our-goal-text {
-      width: 587px; } }
-#homepage .front-page-blurb-heading {
-  color: #fff;
-  position: absolute;
-  font-size: 30px;
-  line-height: 36px;
-  top: 330px;
-  right: 0;
-  left: 0;
-  text-shadow: 1px 1px #998d63; }
 #homepage #tour-dates a span {
   display: inline; }
   #homepage #tour-dates a span:before {
@@ -1245,10 +1142,11 @@ div.menu__brand {
   padding-left: 0px; }
 
 footer {
-  padding: 0px;
+  background-color: #000;
+  border-top: 5px solid white;
+  padding: 15px 0 45px 0;
   color: white;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -1257,8 +1155,8 @@ footer {
   font-size: 14px;
   text-align: center;
   /* SOCIAL MEDIA ICONS IN FOOTER */ }
-  footer .footer-phone {
-    font-size: 17px; }
+  footer .copy {
+    margin-top: 15px; }
   footer .footer-overlay {
     padding: 0px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -1389,31 +1287,16 @@ footer {
   footer #footer-menu-links {
     font-size: 14px; }
 
-.medforward-tag {
-  text-align: center;
-  margin: 10px auto;
-  font-size: 12px;
-  color: #000; }
-
-.medforward-tag a {
-  text-shadow: none !important;
-  font-weight: 700; }
-
 a.btn {
-  background-color: #998d63;
+  background-color: #3c607a;
   color: #fff;
-  -webkit-box-shadow: 22px 22px 0px 0px #f0f0f0;
-  -moz-box-shadow: 22px 22px 0px 0px #f0f0f0;
-  box-shadow: 22px 22px 0px 0px #f0f0f0;
   border-radius: 0px;
   font-size: 24px;
-  padding: 21px; }
-  @media (max-width: 991.98px) {
-    a.btn {
-      display: block; } }
+  padding: 21px;
+  white-space: normal; }
   @media (min-width: 768px) {
     a.btn {
-      width: 310px; } }
+      width: 500px; } }
 
 button.back-to-top {
   margin: 0 !important;
@@ -1471,7 +1354,7 @@ button.back-to-top:hover::before {
 button.back-to-top.show {
   display: block;
   background: #fff;
-  color: #998d63;
+  color: #3c607a;
   font-size: 25px;
   right: 60px;
   bottom: 60px;
@@ -1658,8 +1541,14 @@ body {
   font-family: "Nunito Sans", sans-serif; }
 
 h2 {
-  font-size: 32px;
-  color: #998d63; }
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 5000;
+  text-align: center;
+  color: #fff;
+  font-size: 32px; }
   @media (min-width: 768px) {
     h2 {
       font-size: 64px; } }
