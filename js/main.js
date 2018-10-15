@@ -18,7 +18,7 @@ $(window).resize(function() {
 // change size of navbar on scroll on Desktop
 // $(document).on("scroll", function() {
 //     if (window.innerWidth > 767) { 
-//         if ($(document).scrollTop() > 180) {
+//         if ($(document).scrollTop() > 380) {
 //             $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
 //             $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
 //             $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
@@ -48,11 +48,11 @@ $(document).ready(function() {
 
     }
     //SECOND SECTION PARALLAX
-    // if (window.innerWidth > 767) {
-    //     $('#med-cos-derm-section').parallax({
-    //         imageSrc: '/wp-content/themes/dermcenterdallas/images/crossedarms2.png'
-    //     });
-    // } else if (window.innerWidth <= 767) { return }
+    if (window.innerWidth > 767) {
+        $('#page-content').parallax({
+            imageSrc: 'images/background.jpg'
+        });
+    } else if (window.innerWidth <= 767) { return }
 
 
 });
@@ -77,7 +77,7 @@ $(document).ready(function() {
         }
     });
 
-    $('button.back-to-top').click(function() {
+    $('.back-to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 800);

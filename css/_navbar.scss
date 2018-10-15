@@ -27,6 +27,7 @@ $mobile-navbar-color: #2f6886;
             transition: filter .5s;
             -webkit-backface-visibility: hidden;
             outline: 1px solid transparent;
+
             &:hover {
                 filter: drop-shadow(-1px 1px 8px #fff);
 
@@ -281,6 +282,8 @@ $mobile-navbar-color: #2f6886;
     &__list2 {
         list-style-type: none;
         padding-left: 0px;
+        margin-top: 10vw;
+        line-height: 35px;
 
         @include media-breakpoint-up(sm) {
             margin-bottom: 15rem;
@@ -441,6 +444,18 @@ div.menu__brand {
     position: absolute;
     top: 8vw;
     width: 100vw;
+
+    @include media-breakpoint-up(md) {
+        width: 25vw;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 25vw;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 15vw;
+    }
 
     ul {
         padding-left: 27px;

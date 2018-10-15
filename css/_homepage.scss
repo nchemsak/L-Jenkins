@@ -13,6 +13,25 @@
 
 
 #homepage {
+    section {
+
+        padding-top: 25px;
+        h2 {
+            text-align: center;
+        }
+    }
+
+    #music-iframe {
+        height: 100vh;
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        padding: 50px;
+        @include media-breakpoint-up(xl) {
+            width: 600px;
+        }
+    }
+
     .fa-chevron-down {
         color: #747474;
 
@@ -224,4 +243,24 @@
         left: 0;
         text-shadow: 1px 1px #998d63;
     }
+
+
+    #tour-dates {
+        a {
+            span {
+                display: inline;
+
+                &:before {
+                    content: initial;
+                }
+            }
+
+            &:hover {
+                span {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+
 }

@@ -931,7 +931,9 @@
         display: none; } }
   .menu__list2 {
     list-style-type: none;
-    padding-left: 0px; }
+    padding-left: 0px;
+    margin-top: 10vw;
+    line-height: 35px; }
     @media (min-width: 576px) {
       .menu__list2 {
         margin-bottom: 15rem; } }
@@ -1052,6 +1054,15 @@ div.menu__brand {
   position: absolute;
   top: 8vw;
   width: 100vw; }
+  @media (min-width: 768px) {
+    .menu__brand3 {
+      width: 25vw; } }
+  @media (min-width: 992px) {
+    .menu__brand3 {
+      width: 25vw; } }
+  @media (min-width: 1200px) {
+    .menu__brand3 {
+      width: 15vw; } }
   .menu__brand3 ul {
     padding-left: 27px;
     list-style: none; }
@@ -1073,6 +1084,19 @@ div.menu__brand {
 .hideLogo {
   display: none; }
 
+#homepage section {
+  padding-top: 25px; }
+  #homepage section h2 {
+    text-align: center; }
+#homepage #music-iframe {
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  padding: 50px; }
+  @media (min-width: 1200px) {
+    #homepage #music-iframe {
+      width: 600px; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {
@@ -1213,6 +1237,12 @@ div.menu__brand {
   right: 0;
   left: 0;
   text-shadow: 1px 1px #998d63; }
+#homepage #tour-dates a span {
+  display: inline; }
+  #homepage #tour-dates a span:before {
+    content: initial; }
+#homepage #tour-dates a:hover span {
+  padding-left: 0px; }
 
 footer {
   padding: 0px;
