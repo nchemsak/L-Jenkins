@@ -19,6 +19,7 @@ $mobile-navbar-color: #2f6886;
         height: 60px;
 
     }
+
     @include media-breakpoint-up(md) {
         height: 112px;
     }
@@ -40,11 +41,15 @@ $mobile-navbar-color: #2f6886;
             @include media-breakpoint-up(md) {
                 padding-top: 11px;
                 padding-bottom: 21px;
+                width: 27vw;
             }
 
             @include media-breakpoint-up(lg) {
                 padding-top: 10px;
                 padding-bottom: 10px;
+            }
+            @include media-breakpoint-up(xl) {
+                width: 14vw;
             }
         }
 
@@ -91,6 +96,13 @@ $mobile-navbar-color: #2f6886;
 
         @media (min-width: 1380px) {
             margin-left: 500px;
+        }
+    }
+
+    .spotify-iframe {
+        @include media-breakpoint-down(sm) {
+
+            margin-top: 50px;
         }
     }
 }
@@ -160,16 +172,17 @@ $mobile-navbar-color: #2f6886;
 }
 
 .small-dark-navbar {
-      background-color: none;
-        border: none;
-        // height: initial;
+    background-color: none;
+    border: none;
+    // height: initial;
 
     @include media-breakpoint-up(md) {
-          background-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid #fff;
-    // height: 110px;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid #fff;
+        // height: 110px;
     }
+
     // @include media-breakpoint-up(sm) {
     //     background-color: rgba(83, 83, 83, 0.9);
     // }
@@ -459,7 +472,7 @@ div.menu__brand {
     width: 100vw;
 
     @include media-breakpoint-up(md) {
-        width: 25vw;
+        width: 27vw;
     }
 
     @include media-breakpoint-up(lg) {

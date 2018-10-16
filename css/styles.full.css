@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers");
 @-webkit-keyframes neon2 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #729cac, 0 0 70px #729cac, 0 0 80px #729cac, 0 0 100px #729cac, 0 0 150px #729cac; }
@@ -778,11 +779,15 @@
     @media (min-width: 768px) {
       .navbar .navbar-brand img {
         padding-top: 11px;
-        padding-bottom: 21px; } }
+        padding-bottom: 21px;
+        width: 27vw; } }
     @media (min-width: 992px) {
       .navbar .navbar-brand img {
         padding-top: 10px;
         padding-bottom: 10px; } }
+    @media (min-width: 1200px) {
+      .navbar .navbar-brand img {
+        width: 14vw; } }
   .navbar .navbar-brand.navbar-brand-xs img {
     width: 47vw;
     margin-left: auto;
@@ -814,6 +819,9 @@
     @media (min-width: 1380px) {
       .navbar .nav-phone {
         margin-left: 500px; } }
+  @media (max-width: 767.98px) {
+    .navbar .spotify-iframe {
+      margin-top: 50px; } }
 
 .nav-link {
   display: inline;
@@ -1062,7 +1070,7 @@ div.menu__brand {
   width: 100vw; }
   @media (min-width: 768px) {
     .menu__brand3 {
-      width: 25vw; } }
+      width: 27vw; } }
   @media (min-width: 992px) {
     .menu__brand3 {
       width: 25vw; } }
@@ -1104,6 +1112,14 @@ div.menu__brand {
     margin: 0 auto;
     width: 100%;
     padding: 0px; }
+    @media (min-width: 768px) {
+      #homepage #music-section #music-iframe {
+        width: 55%;
+        height: 77vh; } }
+    @media (min-width: 992px) {
+      #homepage #music-section #music-iframe {
+        width: 66%;
+        height: 58vh; } }
     @media (min-width: 1200px) {
       #homepage #music-section #music-iframe {
         width: 600px;
@@ -1134,158 +1150,14 @@ div.menu__brand {
     @media (min-width: 1200px) {
       #homepage .bottom-title-scroll .preacher-logo {
         max-width: 550px; } }
-#homepage #tour-dates a span {
-  display: inline; }
-  #homepage #tour-dates a span:before {
-    content: initial; }
-#homepage #tour-dates a:hover span {
-  padding-left: 0px; }
-
-footer {
-  background-color: #000;
-  border-top: 5px solid white;
-  padding: 15px 0 45px 0;
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -webkit-filter: drop-shadow(0px 5px 5px #222);
-  filter: drop-shadow(0px 5px 5px #222);
-  font-size: 14px;
-  text-align: center;
-  /* SOCIAL MEDIA ICONS IN FOOTER */ }
-  footer .copy {
-    margin-top: 15px; }
-  footer .footer-overlay {
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: inset 0 -16px 65px -4px rgba(0, 0, 0, 0.3), inset 0 16px 65px -4px rgba(0, 0, 0, 0.3); }
-    @media (min-width: 768px) {
-      footer .footer-overlay {
-        padding: 60px 40px; } }
-  footer h4 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #fff; }
-  footer .footer-brand,
-  footer .footer-nav,
-  footer .footer-social,
-  footer .footer-ns {
-    padding: 10px 25px; }
-  footer .footer-nav,
-  footer .footer-social,
-  footer .footer-ns {
-    border-color: transparent; }
-    @media (min-width: 768px) {
-      footer .footer-nav,
-      footer .footer-social,
-      footer .footer-ns {
-        border-left: solid 1px rgba(255, 255, 255, 0.1); } }
-  footer .footer-brand h2 {
-    margin: 0px 0px 10px;
-    font-size: 20px; }
-  footer .footer-brand p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7); }
-  footer .footer-nav ul.list {
-    list-style: none;
-    padding: 0px;
-    margin-bottom: 0px; }
-    footer .footer-nav ul.list li {
-      padding: 5px 0px; }
-    footer .footer-nav ul.list a {
-      color: rgba(255, 255, 255, 0.8); }
-      footer .footer-nav ul.list a:hover {
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none; }
-      footer .footer-nav ul.list a span:before {
-        top: 0px; }
-  footer a {
-    text-shadow: none; }
-  footer #footer-social ul {
-    list-style: none;
-    padding: 0px;
-    margin-top: 17px;
-    line-height: 20px; }
-  footer #footer-social li {
-    display: inline;
-    height: 0;
-    margin-bottom: 5px; }
-  footer #footer-social a {
-    color: white; }
-    footer #footer-social a:hover {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-      -webkit-filter: drop-shadow(-1px -1px 2px #222);
-      filter: drop-shadow(-1px -1px 2px #222); }
-  footer #footer-social .icon-link {
-    width: 60px;
-    height: 60px;
-    background-color: #666;
-    line-height: 60px;
-    text-align: center;
-    vertical-align: middle;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    border-radius: 50%; }
-    @media (min-width: 992px) {
-      footer #footer-social .icon-link {
-        margin-right: 10px;
-        float: left;
-        display: block; } }
-    footer #footer-social .icon-link .fa {
-      color: #fff;
-      line-height: 60px;
-      font-size: 36px; }
-    footer #footer-social .icon-link:hover {
-      height: 56px;
-      line-height: 56px;
-      width: 56px;
-      border: 2px solid #666;
-      -webkit-background-clip: text; }
-      footer #footer-social .icon-link:hover .fa {
-        line-height: 56px; }
-      footer #footer-social .icon-link:hover .fa-facebook {
-        color: #3b5998; }
-      footer #footer-social .icon-link:hover .fa-twitter {
-        color: #00aced; }
-      footer #footer-social .icon-link:hover .fa-instagram {
-        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
-  footer .footer-ns img {
-    margin-bottom: 15px; }
-    @media (min-width: 768px) {
-      footer .footer-ns img {
-        margin-bottom: 0px; } }
-  footer .footer-ns h4 {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 10px; }
-  footer .footer-ns p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7); }
-  footer .footer-ns a {
-    border-bottom: 1px solid darkgrey;
-    color: #fff;
-    transition: all .5s; }
-    footer .footer-ns a:hover {
-      text-decoration: none;
-      background-color: darkgrey;
-      color: #000 !important; }
-    footer .footer-ns a.footer-logo-link {
-      border: none; }
-      footer .footer-ns a.footer-logo-link:hover {
-        background-color: initial; }
-  footer #footer-menu-links {
-    font-size: 14px; }
+#homepage #tour-dates {
+  background-image: url("images/background2.jpg"); }
+  #homepage #tour-dates a span {
+    display: inline; }
+    #homepage #tour-dates a span:before {
+      content: initial; }
+  #homepage #tour-dates a:hover span {
+    padding-left: 0px; }
 
 a.btn {
   background-color: #3c607a;
@@ -1536,34 +1408,39 @@ a:hover span:before {
   left: 0;
   -webkit-backface-visibility: hidden; }
 
+footer {
+  background-color: #000;
+  border-top: 5px solid white;
+  padding: 15px 0 45px 0;
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-filter: drop-shadow(0px 5px 5px #222);
+  filter: drop-shadow(0px 5px 5px #222);
+  font-size: 14px;
+  text-align: center; }
+  footer .copy {
+    margin-top: 15px; }
+  footer h2 {
+    font-size: 9vw; }
+    @media (min-width: 576px) {
+      footer h2 {
+        font-size: 39px; } }
+    @media (min-width: 768px) {
+      footer h2 {
+        font-size: 65px; } }
+  footer a {
+    text-decoration: none;
+    color: #3c607a; }
+    footer a:hover {
+      text-decoration: none;
+      color: #578baf; }
+
 body {
   line-height: 30px;
   font-family: "Nunito Sans", sans-serif; }
-
-h2 {
-  display: table;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 5000;
-  text-align: center;
-  color: #fff;
-  font-size: 32px; }
-  @media (min-width: 768px) {
-    h2 {
-      font-size: 64px; } }
-
-h3 {
-  font-size: 43px;
-  color: #858585; }
-
-h4 {
-  font-size: 28px;
-  color: #fff; }
-
-h5 {
-  font-size: 18px;
-  color: #fff; }
 
 @media (min-width: 1200px) {
   .container {
@@ -1576,5 +1453,21 @@ img.dcd-logo {
   img.dcd-logo:hover {
     -webkit-filter: drop-shadow(5px 5px 5px #aaa);
     filter: drop-shadow(5px 5px 5px #aaa); }
+
+h2 {
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  color: #3c607a;
+  color: #578baf;
+  text-transform: uppercase;
+  font-size: 65px;
+  white-space: nowrap;
+  font-family: 'Bangers';
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-transform: skew(0, -6.7deg);
+  -ms-transform: skew(0, -6.7deg);
+  -webkit-transform: skew(0, -6.7deg);
+  transform: skew(0, -6.7deg); }
 
 /*# sourceMappingURL=styles.full.css.map */

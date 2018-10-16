@@ -72,9 +72,9 @@ sans-serif;
 /////////////////////// USER IMPORTS - OTHER SASS FILES  \\\\\\\\\\\\\\\\\\\\\\\
 @import "navbar";
 @import "homepage";
-@import "footer";
 @import "buttons";
-// @import "contentpages";
+@import "footer";
+
 
 
 // general styles
@@ -83,40 +83,34 @@ body {
     font-family: $main-font;
 }
 
-h2 {
+// h2 {
+//     display: table;
+//     margin: 0 auto;
+//     margin-bottom: 10px;
+//     position: relative;
+//     z-index: 5000;
+//     text-align: center;
+//     color: #fff;
+//     font-size: 32px;
+//     @include media-breakpoint-up(md) {
+//         font-size: $h2-size;
+//     }
+// }
 
+// h3 {
+//     font-size: $h3-size;
+//     color: $color-grey;
+// }
 
-display: table;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 5000;
+// h4 {
+//     font-size: $h4-size;
+//     color: #fff;
+// }
 
-
-    text-align: center;
-    color: #fff;
-
-    font-size: 32px;
-
-    @include media-breakpoint-up(md) {
-        font-size: $h2-size;
-    }
-}
-
-h3 {
-    font-size: $h3-size;
-    color: $color-grey;
-}
-
-h4 {
-    font-size: $h4-size;
-    color: #fff;
-}
-
-h5 {
-    font-size: $h5-size;
-    color: #fff;
-}
+// h5 {
+//     font-size: $h5-size;
+//     color: #fff;
+// }
 
 .container {
     @include media-breakpoint-up(xl) {
@@ -135,4 +129,32 @@ img.dcd-logo {
         -webkit-filter: drop-shadow(5px 5px 5px #aaa);
         filter: drop-shadow(5px 5px 5px #aaa);
     }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+
+h2 {
+    position: relative;
+  text-align: center;
+  font-weight: normal;
+  color: #3c607a;
+  color: #578baf;
+  text-transform: uppercase;
+  font-size: 65px;
+  white-space: nowrap;
+  // z-index: 10000;
+  font-family: 'Bangers';
+  text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-transform: skew(0, -6.7deg);
+  -ms-transform: skew(0, -6.7deg);
+  -webkit-transform: skew(0, -6.7deg);
+  transform: skew(0, -6.7deg);
+  // -moz-transition-property: font-size;
+  // -o-transition-property: font-size;
+  // -webkit-transition-property: font-size;
+  // transition-property: font-size;
+  // -moz-transition-duration: 0.5s;
+  // -o-transition-duration: 0.5s;
+  // -webkit-transition-duration: 0.5s;
+  // transition-duration: 0.5s;
 }

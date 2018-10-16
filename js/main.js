@@ -1,4 +1,4 @@
-//Leroy Jenkins JS
+//Leroy Sanchez JS
 "use strict";
 
 // make background image full height on window resize
@@ -18,7 +18,7 @@ $(window).resize(function() {
 // change size of navbar on scroll on Desktop
 $(document).on("scroll", function() {
     // if (window.innerWidth > 767) { 
-        if ($(document).scrollTop() > 900) {
+        if ($(document).scrollTop() > 920) {
             // $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
             // $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
             $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
     //SECOND SECTION PARALLAX
     if (window.innerWidth > 767) {
-        $('#page-content').parallax({
+        $('#tour-dates').parallax({
             imageSrc: 'images/background2.jpg'
         });
     } else if (window.innerWidth <= 767) { return }
