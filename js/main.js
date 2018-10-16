@@ -15,18 +15,22 @@ $(window).resize(function() {
 //     }
 // });
 
+
+
+
+
 // change size of navbar on scroll on Desktop
 $(document).on("scroll", function() {
     // if (window.innerWidth > 767) { 
-        if ($(document).scrollTop() > 920) {
-            // $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-            // $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
-            $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
-        } else {
-            // $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
-            // $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
-            $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
-        }
+    if ($(document).scrollTop() > 600) {
+        // $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
+        // $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
+        $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
+    } else {
+        // $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
+        // $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
+        $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
+    }
     // } else {}
 });
 
@@ -42,26 +46,44 @@ $(document).ready(function() {
         $('.header').css({
             'background-size': 'cover',
             // 'background-position': '58% 50%',
-             'background-position': '50% 50%',
+            'background-position': '50% 50%',
             'background-image': 'url("images/PREACHER_BACKGROUND.jpg")'
         });
 
     }
     //SECOND SECTION PARALLAX
-    if (window.innerWidth > 767) {
-        $('#tour-dates').parallax({
-            imageSrc: 'images/background2.jpg'
-        });
-    } else if (window.innerWidth <= 767) { return }
+    // if (window.innerWidth > 767) {
+    $('#page-content').parallax({
+        imageSrc: 'images/background2.jpg'
+    });
+    // } else if (window.innerWidth <= 767) { return }
 
 
 });
+
+
+// Closes the Responsive Menu on Menu Item Click
+// $('.navbar-collapse ul li a').click(function() {
+//     $('.navbar-toggle:visible').click();
+// });
 
 
 // Hamburger menu
 $(document).ready(function() {
     $(".navbar-toggler").click(function() {
         $(".hamburger").toggleClass("is-active");
+    });
+
+    $(".menu__link").click(function() {
+        $(".hamburger").toggleClass("is-active");
+    });
+});
+
+$(document).ready(function() {
+    $('.menu__brand ul li a').click(function() {
+        console.log('hi');
+        // $('.menu--active').click();
+        $(".menu--active").css("display", "initial");
     });
 });
 
@@ -91,10 +113,13 @@ $(document).ready(function() {
 
 
 
-// Full Screen Navbar
 $(document).ready(function() {
     var Menu = (function() {
         var burger = document.querySelector('.burger');
+        var menuitem1 = document.querySelector('.item1');
+        var menuitem2 = document.querySelector('.item2');
+        var menuitem3 = document.querySelector('.item3');
+        var menuitem4 = document.querySelector('.item4');
         var menu = document.querySelector('.menu');
         // var menuList = document.querySelector('.menu__list');
         var brand = document.querySelector('.menu__brand');
@@ -107,7 +132,6 @@ $(document).ready(function() {
         var toggleMenu = function() {
             if (!active) {
                 menu.classList.add('menu--active');
-                // menuList.classList.add('menu__list--active');
                 brand.classList.add('menu__brand--active');
                 burger.classList.add('burger--close');
                 for (var i = 0, ii = menuItems.length; i < ii; i++) {
@@ -116,7 +140,6 @@ $(document).ready(function() {
                 active = true;
             } else {
                 menu.classList.remove('menu--active');
-                // menuList.classList.remove('menu__list--active');
                 brand.classList.remove('menu__brand--active');
                 burger.classList.remove('burger--close');
                 for (var i = 0, ii = menuItems.length; i < ii; i++) {
@@ -128,6 +151,12 @@ $(document).ready(function() {
 
         var bindActions = function() {
             burger.addEventListener('click', toggleMenu, false);
+            menuitem1.addEventListener('click', toggleMenu, false);
+            menuitem2.addEventListener('click', toggleMenu, false);
+            menuitem3.addEventListener('click', toggleMenu, false);
+            menuitem4.addEventListener('click', toggleMenu, false);
+
+
         };
 
         var init = function() {
@@ -154,13 +183,13 @@ $(document).ready(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             // scrollTop: ($($anchor.attr('href')).offset().top - 75)
-               scrollTop: ($($anchor.attr('href')).offset().top)
+            scrollTop: ($($anchor.attr('href')).offset().top)
         }, 1000);
         event.preventDefault();
     });
 });
 
 
-$(function () {
-  $('[data-toggle="popover"]').popover()
+$(function() {
+    $('[data-toggle="popover"]').popover()
 })

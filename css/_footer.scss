@@ -20,9 +20,11 @@ footer {
 
     h2 {
         font-size: 9vw;
-  @include media-breakpoint-up(sm) {
+
+        @include media-breakpoint-up(sm) {
             font-size: 39px;
         }
+
         @include media-breakpoint-up(md) {
             font-size: 65px;
         }
@@ -38,4 +40,22 @@ footer {
         }
     }
 
+
+
+    .spotify-iframe {
+        width: 160px;
+
+        @include media-breakpoint-up(sm) {
+            margin-right: 15px;
+        }
+    }
+
+    .fa {
+        &:hover {
+            color: #fff;
+            -webkit-animation: neon2 1s ease-in-out infinite alternate;
+            -moz-animation: neon2 1s ease-in-out infinite alternate;
+            animation: neon2 1s ease-in-out infinite alternate;
+        }
+    }
 }

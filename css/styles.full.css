@@ -1104,26 +1104,31 @@ div.menu__brand {
   padding-top: 25px; }
 #homepage #music-section {
   background-color: black;
-  padding-bottom: 25px;
-  border-bottom: 5px solid white; }
+  padding-bottom: 25px; }
   #homepage #music-section #music-iframe {
     height: 100vh;
     display: block;
     margin: 0 auto;
     width: 100%;
     padding: 0px; }
+    @media (min-width: 576px) {
+      #homepage #music-section #music-iframe {
+        height: 794px; } }
     @media (min-width: 768px) {
       #homepage #music-section #music-iframe {
         width: 55%;
-        height: 77vh; } }
+        height: 92vh;
+        height: 794px; } }
     @media (min-width: 992px) {
       #homepage #music-section #music-iframe {
         width: 66%;
-        height: 58vh; } }
+        height: 100vh;
+        height: 794px; } }
     @media (min-width: 1200px) {
       #homepage #music-section #music-iframe {
         width: 600px;
-        padding: 50px; } }
+        padding: 50px;
+        height: 100vh; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {
@@ -1437,6 +1442,16 @@ footer {
     footer a:hover {
       text-decoration: none;
       color: #578baf; }
+  footer .spotify-iframe {
+    width: 160px; }
+    @media (min-width: 576px) {
+      footer .spotify-iframe {
+        margin-right: 15px; } }
+  footer .fa:hover {
+    color: #fff;
+    -webkit-animation: neon2 1s ease-in-out infinite alternate;
+    -moz-animation: neon2 1s ease-in-out infinite alternate;
+    animation: neon2 1s ease-in-out infinite alternate; }
 
 body {
   line-height: 30px;
