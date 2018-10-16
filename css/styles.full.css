@@ -1109,29 +1109,28 @@ div.menu__brand {
   background-color: black;
   padding-bottom: 25px; }
   #homepage #music-section #music-iframe {
-    height: 100vh;
+    height: 800px;
     display: block;
     margin: 0 auto;
     width: 100%;
-    padding: 0px; }
+    padding: 0px;
+    overflow: hidden; }
     @media (min-width: 576px) {
       #homepage #music-section #music-iframe {
         height: 794px; } }
     @media (min-width: 768px) {
       #homepage #music-section #music-iframe {
         width: 55%;
-        height: 92vh;
         height: 794px; } }
     @media (min-width: 992px) {
       #homepage #music-section #music-iframe {
         width: 66%;
-        height: 100vh;
         height: 794px; } }
     @media (min-width: 1200px) {
       #homepage #music-section #music-iframe {
         width: 600px;
         padding: 50px;
-        height: 100vh; } }
+        height: 867px; } }
 #homepage .fa-chevron-down {
   color: #747474; }
   #homepage .fa-chevron-down:hover {
@@ -1149,7 +1148,11 @@ div.menu__brand {
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0; }
+  right: 0;
+  font-weight: bold; }
+  @media (min-width: 576px) {
+    #homepage .bottom-title-scroll {
+      font-size: 40px; } }
   #homepage .bottom-title-scroll .preacher-logo {
     max-width: 75%; }
     @media (min-width: 768px) {
