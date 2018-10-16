@@ -819,9 +819,12 @@
     @media (min-width: 1380px) {
       .navbar .nav-phone {
         margin-left: 500px; } }
-  @media (max-width: 767.98px) {
-    .navbar .spotify-iframe {
-      margin-top: 50px; } }
+  .navbar .spotify-iframe {
+    height: 27px;
+    width: 200px; }
+    @media (max-width: 767.98px) {
+      .navbar .spotify-iframe {
+        margin-top: 50px; } }
 
 .nav-link {
   display: inline;
@@ -1155,14 +1158,12 @@ div.menu__brand {
     @media (min-width: 1200px) {
       #homepage .bottom-title-scroll .preacher-logo {
         max-width: 550px; } }
-#homepage #tour-dates {
-  background-image: url("images/background2.jpg"); }
-  #homepage #tour-dates a span {
-    display: inline; }
-    #homepage #tour-dates a span:before {
-      content: initial; }
-  #homepage #tour-dates a:hover span {
-    padding-left: 0px; }
+#homepage #tour-dates a span {
+  display: inline; }
+  #homepage #tour-dates a span:before {
+    content: initial; }
+#homepage #tour-dates a:hover span {
+  padding-left: 0px; }
 
 a.btn {
   background-color: #3c607a;
@@ -1443,7 +1444,8 @@ footer {
       text-decoration: none;
       color: #578baf; }
   footer .spotify-iframe {
-    width: 160px; }
+    width: 160px;
+    height: 27px; }
     @media (min-width: 576px) {
       footer .spotify-iframe {
         margin-right: 15px; } }

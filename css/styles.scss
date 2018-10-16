@@ -83,35 +83,6 @@ body {
     font-family: $main-font;
 }
 
-// h2 {
-//     display: table;
-//     margin: 0 auto;
-//     margin-bottom: 10px;
-//     position: relative;
-//     z-index: 5000;
-//     text-align: center;
-//     color: #fff;
-//     font-size: 32px;
-//     @include media-breakpoint-up(md) {
-//         font-size: $h2-size;
-//     }
-// }
-
-// h3 {
-//     font-size: $h3-size;
-//     color: $color-grey;
-// }
-
-// h4 {
-//     font-size: $h4-size;
-//     color: #fff;
-// }
-
-// h5 {
-//     font-size: $h5-size;
-//     color: #fff;
-// }
-
 .container {
     @include media-breakpoint-up(xl) {
         max-width: 1400px;

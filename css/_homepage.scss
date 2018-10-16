@@ -6,8 +6,8 @@
 // xl: 1200px
 // @include media-breakpoint-up(sm) {}
 // @include media-breakpoint-up(md) {}
-// @include media-breakpoint-up(lg) {} 
-// @include media-breakpoint-up(xl) {} 
+// @include media-breakpoint-up(lg) {}
+// @include media-breakpoint-up(xl) {}
 
 
 
@@ -100,7 +100,7 @@
 
 
     #tour-dates {
-        background-image: url("images/background2.jpg");
+        // background-image: url("/images/opt/background2.jpg");
         a {
             span {
                 display: inline;

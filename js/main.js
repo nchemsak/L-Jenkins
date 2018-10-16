@@ -6,67 +6,35 @@ $(window).resize(function() {
     $('.header').css("height", "100vh");
 })
 
-// Set classes for navbar for mobile
-// $(document).ready(function() {
-//     if (window.innerWidth <= 767) {
-//         $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-//         $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
-//         $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
-//     }
-// });
-
-
-
-
-
-// change size of navbar on scroll on Desktop
+// add navbar background and line with a class on scroll
 $(document).on("scroll", function() {
-    // if (window.innerWidth > 767) { 
     if ($(document).scrollTop() > 600) {
-        // $(".navbar-toggler").removeClass("large-navbar-toggler").addClass("small-navbar-toggler");
-        // $(".dcd-nav-logo").removeClass("large-dcd-nav-logo").addClass("small-dcd-nav-logo");
         $(".navbar").removeClass("large-dark-navbar").addClass("small-dark-navbar");
     } else {
-        // $(".navbar-toggler").removeClass("small-navbar-toggler").addClass("large-navbar-toggler");
-        // $(".dcd-nav-logo").removeClass("small-dcd-nav-logo").addClass("large-dcd-nav-logo");
         $(".navbar").removeClass("small-dark-navbar").addClass("large-dark-navbar");
     }
-    // } else {}
 });
 
 // parallax window - http://pixelcog.github.io/parallax.js/
 $(document).ready(function() {
-    // $('.header').height($(window).height());
     $('.header').css("height", "100vh");
     if (window.innerWidth > 767) {
         $('.header').parallax({
-            imageSrc: 'images/PREACHER_BACKGROUND.jpg'
+            imageSrc: 'images/opt/PREACHER_BACKGROUND.jpg'
         });
     } else if (window.innerWidth <= 767) {
         $('.header').css({
             'background-size': 'cover',
-            // 'background-position': '58% 50%',
             'background-position': '50% 50%',
-            'background-image': 'url("images/PREACHER_BACKGROUND.jpg")'
+            'background-image': 'url("images/opt/PREACHER_BACKGROUND.jpg")'
         });
-
     }
+
     //SECOND SECTION PARALLAX
-    // if (window.innerWidth > 767) {
     $('#page-content').parallax({
-        imageSrc: 'images/background2.jpg'
+        imageSrc: 'images/opt/background2.jpg'
     });
-    // } else if (window.innerWidth <= 767) { return }
-
-
 });
-
-
-// Closes the Responsive Menu on Menu Item Click
-// $('.navbar-collapse ul li a').click(function() {
-//     $('.navbar-toggle:visible').click();
-// });
-
 
 // Hamburger menu
 $(document).ready(function() {
@@ -86,7 +54,6 @@ $(document).ready(function() {
         $(".menu--active").css("display", "initial");
     });
 });
-
 
 // Back to top Button
 $(document).ready(function() {
@@ -111,8 +78,7 @@ $(document).ready(function() {
     Waves.init();
 });
 
-
-
+// Menu effects on mobile
 $(document).ready(function() {
     var Menu = (function() {
         var burger = document.querySelector('.burger');
@@ -155,8 +121,6 @@ $(document).ready(function() {
             menuitem2.addEventListener('click', toggleMenu, false);
             menuitem3.addEventListener('click', toggleMenu, false);
             menuitem4.addEventListener('click', toggleMenu, false);
-
-
         };
 
         var init = function() {
@@ -166,13 +130,8 @@ $(document).ready(function() {
         return {
             init: init
         };
-
     }());
-
     Menu.init();
-
-
-
 });
 
 
@@ -189,7 +148,7 @@ $(document).ready(function() {
     });
 });
 
-
+// popovers for social icons
 $(function() {
     $('[data-toggle="popover"]').popover()
 })
