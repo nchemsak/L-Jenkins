@@ -30,27 +30,11 @@ $(document).ready(function() {
         });
     }
 
-
+    //SECOND SECTION PARALLAX
+    $('#page-content').parallax({
+        imageSrc: 'images/opt/background2.jpg'
+    });
 });
-
-
-
-//SECOND SECTION PARALLAX
-$(document).ready(function() {
-    if (window.innerWidth > 1024) {
-        $('#page-content').parallax({
-            imageSrc: 'images/opt/background2.jpg'
-        });
-    } else if (window.innerWidth <= 1024) {
-        $('#page-content').css({
-            'background-size': 'contain',
-            'background-position': '50% 50%',
-            'background-image': 'url("images/opt/background2.jpg")'
-        });
-
-    }
-});
-
 
 // Hamburger menu
 $(document).ready(function() {

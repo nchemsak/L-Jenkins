@@ -20,13 +20,18 @@ footer {
 
     h2 {
         font-size: 9vw;
+        display: inline;
 
         @include media-breakpoint-up(sm) {
             font-size: 39px;
         }
 
         @include media-breakpoint-up(md) {
-            font-size: 65px;
+            // font-size: 65px;
+            font-size: 3vw;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 3vw;
         }
     }
 

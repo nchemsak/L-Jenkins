@@ -19,14 +19,14 @@
 
     section {
 
-        padding-top: 25px;
+        // padding-top: 25px;
 
 
     }
 
     #music-section {
         background-color: black;
-        padding-bottom: 25px;
+        padding-bottom: 75px;
         // border-top: 5px solid white;
         // border-bottom: 5px solid white;
 
@@ -37,7 +37,7 @@
             width: 100%;
             padding: 0px;
             overflow: hidden;
-
+            border: none;
             @include media-breakpoint-up(sm) {
                 height: 794px;
             }
@@ -54,7 +54,7 @@
 
             @include media-breakpoint-up(xl) {
                 width: 600px;
-                padding: 50px;
+                // padding: 50px;
                 height: 867px;
                 // width: 100%;
 
