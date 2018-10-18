@@ -42,7 +42,7 @@ button.back-to-top {
     bottom: 50px;
     font-size: 0px;
     outline: 0 !important;
-    z-index: 99;
+    z-index: 501;
     transition: all .3s ease-in-out;
     @include media-breakpoint-up(sm) {
         right: 50px;

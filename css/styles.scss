@@ -72,12 +72,12 @@ sans-serif;
 
 
 ///////////////////// IMPORT PREDEFINED BOOTSTRAP MIXINS  \\\\\\\\\\\\\\\\\\\\\\
-// @import "../lib/bootstrap-4.0.0/scss/functions";
-// @import "../lib/bootstrap-4.0.0/scss/variables";
-// @import "../lib/bootstrap-4.0.0/scss/mixins";
-// @import "../lib/bootstrap-4.0.0/scss/grid";
+@import "../lib/bootstrap-4.0.0/scss/functions";
+@import "../lib/bootstrap-4.0.0/scss/variables";
+@import "../lib/bootstrap-4.0.0/scss/mixins";
+@import "../lib/bootstrap-4.0.0/scss/grid";
 
-@import "../lib/bootstrap-4.0.0/scss/bootstrap";
+// @import "../lib/bootstrap-4.0.0/scss/bootstrap";
 /////////////////////// USER IMPORTS - OTHER SASS FILES  \\\\\\\\\\\\\\\\\\\\\\\
 @import "navbar";
 @import "homepage";

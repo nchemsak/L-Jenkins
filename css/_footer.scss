@@ -20,7 +20,8 @@ footer {
 
     h2 {
         font-size: 9vw;
-        display: inline;
+        display: block;
+        padding: 17px 0px;
 
         @include media-breakpoint-up(sm) {
             font-size: 39px;
@@ -28,11 +29,15 @@ footer {
 
         @include media-breakpoint-up(md) {
             // font-size: 65px;
-            font-size: 3vw;
+            font-size: 50px
         }
-        @include media-breakpoint-up(lg) {
-            font-size: 3vw;
-        }
+
+        // @include media-breakpoint-up(lg) {
+        //     font-size: 3vw;
+        // }
+        // @include media-breakpoint-up(xl) {
+        //     font-size: 50px;
+        // }
     }
 
     a {
@@ -41,15 +46,43 @@ footer {
 
         &:hover {
             text-decoration: none;
-            color: #578baf;
+            // color: #578baf;
+
+            color: #fff;
+            -webkit-animation: neon2 1s ease-in-out infinite alternate;
+            -moz-animation: neon2 1s ease-in-out infinite alternate;
+            animation: neon2 1s ease-in-out infinite alternate;
+
+            * {
+                text-decoration: none;
+                // color: #578baf;
+
+                color: #fff;
+                -webkit-animation: neon2 1s ease-in-out infinite alternate;
+                -moz-animation: neon2 1s ease-in-out infinite alternate;
+                animation: neon2 1s ease-in-out infinite alternate;
+            }
+        }
+
+        &.btn {
+            width: 60%;
+            @include media-breakpoint-up(sm) {
+
+                width: 200px
+            }
+            @include media-breakpoint-up(md) {
+                width: 300px;
+            }
         }
     }
 
 
 
+
     .spotify-iframe {
         width: 160px;
-       height: 27px;
+        height: 27px;
+
         @include media-breakpoint-up(sm) {
             margin-right: 15px;
         }
